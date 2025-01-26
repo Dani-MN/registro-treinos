@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Treinos</title>
+
+    <link rel="shortcut icon" href="assets/img/academia.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro de Treinos</h1>
+    </header>
+
+    <main>
+        <div class="tab-container">
+            <div class="tab active" onclick="showTab('treinoA')">Treino A</div>
+            <div class="tab" onclick="showTab('treinoB')">Treino B</div>
+            <div class="tab" onclick="showTab('treinoC')">Treino C</div>
+            <div class="tab" onclick="showTab('treinoD')">Treino D</div>
+            <div class="tab" onclick="showTab('treinoE')">Treino E</div>
+        </div>
+
+        <section id="treinoA" class="tab-content active">
+            <article class="treino">
+                <header>
+                    <h2>Treino A - Quadríceps e Panturrilha</h2>
+                </header>
+
+                <section class="exercicio">
+                    <header>
+                        <h3>1. Panturrilha em Pé</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesa1">Séries:</label>
+                        <div class="series-group" id="seriesa1">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesa1">Repetições:</label>
+                        <div class="reps-group" id="repeticoesa1">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesoa1">Peso (kg):</label>
+                        <div class="peso-group" id="pesoa1">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosa1">Comentários:</label>
+                        <textarea id="comentariosa1" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 2 do Treino A -->
+                <section class="exercicio">
+                    <header>
+                        <h3>2. Cadeira Extensora</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesa2">Séries:</label>
+                        <div class="series-group" id="seriesa2">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesa2">Repetições:</label>
+                        <div class="reps-group" id="repeticoesa2">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesoa2">Peso (kg):</label>
+                        <div class="peso-group" id="pesoa2">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosa2">Comentários:</label>
+                        <textarea id="comentariosa2" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 3 do Treino A -->
+                <section class="exercicio">
+                    <header>
+                        <h3>3. LegPress Horizontal</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesa3">Séries:</label>
+                        <div class="series-group" id="seriesa3">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesa3">Repetições:</label>
+                        <div class="reps-group" id="repeticoesa3">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesoa3">Peso (kg):</label>
+                        <div class="peso-group" id="pesoa3">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosa3">Comentários:</label>
+                        <textarea id="comentariosa3" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 4 do Treino A -->
+                <section class="exercicio">
+                    <header>
+                        <h3>4. StepUp com halteres (cada perna)</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesa4">Séries:</label>
+                        <div class="series-group" id="seriesa4">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesa4">Repetições:</label>
+                        <div class="reps-group" id="repeticoesa4">
+                            <input type="number" placeholder="8">
+                            <input type="number" placeholder="8">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesoa4">Peso (kg):</label>
+                        <div class="peso-group" id="pesoa4">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosa4">Comentários:</label>
+                        <textarea id="comentariosa4" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 5 do Treino A -->
+                <section class="exercicio">
+                    <header>
+                        <h3>5. Passada (ate falhar)</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesa5">Séries:</label>
+                        <div class="series-group" id="seriesa5">
+                            <input type="text" value="Série 1" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesa5">Repetições:</label>
+                        <div class="reps-group" id="repeticoesa5">
+                            <input type="number" placeholder="12">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesoa5">Peso (kg):</label>
+                        <div class="peso-group" id="pesoa5">
+                            <input type="number" placeholder="Peso 1">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosa5">Comentários:</label>
+                        <textarea id="comentariosa5" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <section id="treinoB" class="tab-content">
+            <article class="treino">
+                <header>
+                    <h2>Treino B - Peito, Ombro e Tríceps</h2>
+                </header>
+
+                <section class="exercicio">
+                    <header>
+                        <h3>1. Supino inclinado máquina</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesb1">Séries:</label>
+                        <div class="series-group" id="seriesb1">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesb1">Repetições:</label>
+                        <div class="reps-group" id="repeticoesb1">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesob1">Peso (kg):</label>
+                        <div class="peso-group" id="pesob1">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosb1">Comentários:</label>
+                        <textarea id="comentariosb1" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 2 do Treino B -->
+                <section class="exercicio">
+                    <header>
+                        <h3>2. Desenvolvimento máquina (Ombro)</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesb2">Séries:</label>
+                        <div class="series-group" id="seriesb2">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesb2">Repetições:</label>
+                        <div class="reps-group" id="repeticoesb2">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesob2">Peso (kg):</label>
+                        <div class="peso-group" id="pesob2">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosb2">Comentários:</label>
+                        <textarea id="comentariosb2" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 3 do Treino B -->
+                <section class="exercicio">
+                    <header>
+                        <h3>3. Fly Máquina</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-b3">Séries:</label>
+                        <div class="series-group" id="series-a2">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-b3">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-a2">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-b3">Peso (kg):</label>
+                        <div class="peso-group" id="peso-a2">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-b3">Comentários:</label>
+                        <textarea id="comentarios-b3" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 4 do Treino B -->
+                <section class="exercicio">
+                    <header>
+                        <h3>4. Elevação lateral com halteres</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesb4">Séries:</label>
+                        <div class="series-group" id="seriesb4">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesb4">Repetições:</label>
+                        <div class="reps-group" id="repeticoesb4">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesob4">Peso (kg):</label>
+                        <div class="peso-group" id="pesob4">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosb4">Comentários:</label>
+                        <textarea id="comentariosb4" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 5 do Treino B -->
+                <section class="exercicio">
+                    <header>
+                        <h3>5. Tríceps na Polia com barra reta</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="seriesb5">Séries:</label>
+                        <div class="series-group" id="seriesb5">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoesb5">Repetições:</label>
+                        <div class="reps-group" id="repeticoesb5">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pesob5">Peso (kg):</label>
+                        <div class="peso-group" id="pesob5">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariosb5">Comentários:</label>
+                        <textarea id="comentariosb5" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <section id="treinoC" class="tab-content">
+            <article class="treino">
+                <header>
+                    <h2>Treino C - Posteriores de coxa, glúteos e perna</h2>
+                </header>
+
+                <section class="exercicio">
+                    <header>
+                        <h3>1. Panturrilha sentada</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-b1">Séries:</label>
+                        <div class="series-group" id="series-c1">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-c1">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-b1">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-c1">Peso (kg):</label>
+                        <div class="peso-group" id="peso-c1">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-c1">Comentários:</label>
+                        <textarea id="comentarios-c1" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 2 do Treino C -->
+                <section class="exercicio">
+                    <header>
+                        <h3>2. Mesa Flexora</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-c2">Séries:</label>
+                        <div class="series-group" id="series-c2">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-c2">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-c2">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-c2">Peso (kg):</label>
+                        <div class="peso-group" id="peso-c2">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-c2">Comentários:</label>
+                        <textarea id="comentarios-c2" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 3 do Treino C -->
+                <section class="exercicio">
+                    <header>
+                        <h3>3. Elevação pélvica na máquina ou livre</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-c3">Séries:</label>
+                        <div class="series-group" id="series-c3">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-c3">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-c3">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-c3">Peso (kg):</label>
+                        <div class="peso-group" id="peso-c3">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-c3">Comentários:</label>
+                        <textarea id="comentarios-c3" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 4 do Treino C -->
+                <section class="exercicio">
+                    <header>
+                        <h3>4. Cadeira Flexora</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-c4">Séries:</label>
+                        <div class="series-group" id="series-c4">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-c4">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-c4">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-c4">Peso (kg):</label>
+                        <div class="peso-group" id="peso-c4">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-c4">Comentários:</label>
+                        <textarea id="comentarios-c4" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 5 do Treino C -->
+                <section class="exercicio">
+                    <header>
+                        <h3>5. Abdução de quadril na polia</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-c5">Séries:</label>
+                        <div class="series-group" id="series-c5">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-c5">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-c5">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-c5">Peso (kg):</label>
+                        <div class="peso-group" id="peso-c5">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-c5">Comentários:</label>
+                        <textarea id="comentarios-c5" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <section id="treinoD" class="tab-content">
+            <article class="treino">
+                <header>
+                    <h2>Treino D - Costas e Bíceps</h2>
+                </header>
+
+                <section class="exercicio">
+                    <header>
+                        <h3>1. Puxador frontal com supinada</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-d1">Séries:</label>
+                        <div class="series-group" id="series-d1">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-d1">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-d1">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-d1">Peso (kg):</label>
+                        <div class="peso-group" id="peso-d1">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-d1">Comentários:</label>
+                        <textarea id="comentarios-d1" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 2 do Treino D -->
+                <section class="exercicio">
+                    <header>
+                        <h3>2. Remada Baixa</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-d2">Séries:</label>
+                        <div class="series-group" id="series-d2">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-d2">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-d2">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-d2">Peso (kg):</label>
+                        <div class="peso-group" id="peso-d2">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-d2">Comentários:</label>
+                        <textarea id="comentarios-d2" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 3 do Treino D -->
+                <section class="exercicio">
+                    <header>
+                        <h3>3. Crucifixo inverso na máquina</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-d3">Séries:</label>
+                        <div class="series-group" id="series-d3">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-d3">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-d3">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-d3">Peso (kg):</label>
+                        <div class="peso-group" id="peso-d3">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-d3">Comentários:</label>
+                        <textarea id="comentarios-d3" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 4 do Treino D -->
+                <section class="exercicio">
+                    <header>
+                        <h3>4. Rosca Scott</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-d4">Séries:</label>
+                        <div class="series-group" id="series-d4">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-d4">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-d4">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-d4">Peso (kg):</label>
+                        <div class="peso-group" id="peso-d4">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-d4">Comentários:</label>
+                        <textarea id="comentarios-d4" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 5 do Treino D -->
+                <section class="exercicio">
+                    <header>
+                        <h3>5. Rosca Martelo</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-d5">Séries:</label>
+                        <div class="series-group" id="series-d5">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-d5">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-d5">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-d5">Peso (kg):</label>
+                        <div class="peso-group" id="peso-d5">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentarios-d5">Comentários:</label>
+                        <textarea id="comentarios-d5" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <section id="treinoE" class="tab-content">
+            <article class="treino">
+                <header>
+                    <h2>Treino E - Perna Completa</h2>
+                </header>
+
+                <section class="exercicio">
+                    <header>
+                        <h3>1. Panturrilha em pé ou sentada</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-e1">Séries:</label>
+                        <div class="series-group" id="series-e1">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-e1">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-e1">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-e1">Peso (kg):</label>
+                        <div class="peso-group" id="peso-e1">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariose1">Comentários:</label>
+                        <textarea id="comentariose1" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 2 do Treino E -->
+                <section class="exercicio">
+                    <header>
+                        <h3>2. Cadeira Extensora</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-e2">Séries:</label>
+                        <div class="series-group" id="series-e2">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-e2">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-e2">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-e2">Peso (kg):</label>
+                        <div class="peso-group" id="peso-e2">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariose2">Comentários:</label>
+                        <textarea id="comentariose2" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 3 do Treino E -->
+                <section class="exercicio">
+                    <header>
+                        <h3>3. Cadeira Flexora</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-e3">Séries:</label>
+                        <div class="series-group" id="series-e3">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                            <input type="text" value="Série 4" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-e3">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-e3">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-e3">Peso (kg):</label>
+                        <div class="peso-group" id="peso-e3">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                            <input type="number" placeholder="Peso 4">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariose3">Comentários:</label>
+                        <textarea id="comentariose3" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 4 do Treino E -->
+                <section class="exercicio">
+                    <header>
+                        <h3>4. Agachamento sumô</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-e4">Séries:</label>
+                        <div class="series-group" id="series-e4">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-e4">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-e4">
+                            <input type="number" placeholder="15">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-e4">Peso (kg):</label>
+                        <div class="peso-group" id="peso-e4">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariose4">Comentários:</label>
+                        <textarea id="comentariose4" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Exercício 5 do Treino E -->
+                <section class="exercicio">
+                    <header>
+                        <h3>5. Cadeira Abdutora</h3>
+                    </header>
+
+                    <div class="input-group">
+                        <label for="series-e5">Séries:</label>
+                        <div class="series-group" id="series-e5">
+                            <input type="text" value="Série 1" disabled>
+                            <input type="text" value="Série 2" disabled>
+                            <input type="text" value="Série 3" disabled>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="repeticoes-e5">Repetições:</label>
+                        <div class="reps-group" id="repeticoes-e5">
+                            <input type="number" placeholder="12">
+                            <input type="number" placeholder="10">
+                            <input type="number" placeholder="8">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso-e5">Peso (kg):</label>
+                        <div class="peso-group" id="peso-e5">
+                            <input type="number" placeholder="Peso 1">
+                            <input type="number" placeholder="Peso 2">
+                            <input type="number" placeholder="Peso 3">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="comentariose5">Comentários:</label>
+                        <textarea id="comentariose5" placeholder="Escreva algo..."></textarea>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <button id="enviarWhatsApp">Enviar Treino</button>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <span class="footer__copy">
+                &#169; Copyright 2025
+                <a href="https://www.linkedin.com/in/danielemedeirosn/" target="_blank">Daniele Medeiros</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
