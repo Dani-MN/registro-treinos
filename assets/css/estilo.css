@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #9b9a9a;
+    background-color: #030303;
     margin: 0;
     padding: 0 20px;
 }
@@ -11,7 +11,7 @@ body {
 h1 {
     text-align: center;
     margin: 20px 0;
-    color: #333;
+    color: #fdfdfd;
 }
 
 .treino {
@@ -24,7 +24,7 @@ h1 {
 
 .treino h2 {
     font-size: 1.4em;
-    color: #007bff;
+    color: #ff1212;
     margin-bottom: 10px;
 }
 
@@ -100,7 +100,7 @@ textarea {
     cursor: pointer;
     padding: 10px;
     margin-right: 5px;
-    background-color: #f0f0f0;
+    background-color: #da2736;
     display: inline-block;
     border-radius: 5px;
 }
@@ -138,11 +138,12 @@ textarea {
 .footer {
     text-align: center;
     padding: 20px 40px;
+    color: #b3aeae;
 }
 
 .footer a {
     text-decoration: none;
-    color: #030303;
+    color: #b3aeae;
     font-weight: 600;
 }
 
