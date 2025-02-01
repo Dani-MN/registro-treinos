@@ -100,13 +100,13 @@ textarea {
     cursor: pointer;
     padding: 10px;
     margin-right: 5px;
-    background-color: #da2736;
+    background-color: #f0f0f0;
     display: inline-block;
     border-radius: 5px;
 }
 
 .tab.active {
-    background-color: #007bff;
+    background-color: #da2736;
     color: white;
 }
 
